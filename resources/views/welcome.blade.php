@@ -10,5 +10,6 @@
     </head>
     <body class="app">
         <x-avatar size="big"/>
+        <x-button>Select users</x-button>
     </body>
 </html>

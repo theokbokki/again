@@ -1,0 +1,32 @@
+@use '../colors';
+@use '../utils' as *;
+
+.button {
+    padding: rem(8) rem(12);
+    border: none;
+    color: colors.$white;
+    background: colors.$stone-700;
+    border-radius: rem(8);
+    font-size: rem(16);
+    box-shadow: 0 rem(10) rem(10) rem(-10) rgba(colors.$black, .25),
+        0 rem(2) rem(1) 0 inset rgba(colors.$white, .35);
+    cursor: pointer;
+    transition: box-shadow 100ms ease-out, transform 100ms ease-out;
+
+    &:hover {
+        box-shadow: 0 rem(4) rem(4) rem(-4) rgba(colors.$black, .5),
+            0 rem(1) rem(1) 0 inset rgba(colors.$white, .35);
+    }
+
+    &:active {
+        transform: scale(.98);
+    }
+
+    &:focus-visible {
+        transform: scale(.98);
+        box-shadow: 0 rem(4) rem(4) rem(-4) rgba(colors.$black, .5),
+            0 rem(1) rem(1) 0 inset rgba(colors.$white, .35),
+            0 0 0 rem(2) colors.$stone-300;
+        outline: none;
+    }
+}

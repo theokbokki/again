@@ -5,7 +5,7 @@
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: 0 0 0 rem(1) colors.$stone-200, 0 rem(4) rem(4) rem(-4) rgba(0, 0, 0, .5);
+    box-shadow: 0 0 0 rem(1) colors.$stone-200, 0 rem(4) rem(4) rem(-4) rgba(colors.$black, .5);
 
     &--small {
         width: rem(18);
