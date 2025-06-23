@@ -9,5 +9,6 @@
         @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     </head>
     <body class="app">
+        <x-avatar size="big"/>
     </body>
 </html>
